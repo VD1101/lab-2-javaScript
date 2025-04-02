@@ -53,7 +53,7 @@
     function simulateServerCheck(name, age) {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          if (Number(age) >= 18) {
+          if (Number(age) >= 18 && Numnber(age)<=100) {
             resolve(`Welcome, ${name}! You've been added to the guest list.`);
           } else {
             reject("Sorry, you must be 18 or older to enter.");
